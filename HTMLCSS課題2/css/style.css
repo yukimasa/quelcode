@@ -1,0 +1,751 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.0rem;
+  color: #333;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.88;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* ==========ヘッダー========== */
+#pageHead {
+  height: 60px;
+  margin: 0 0 70px 0;
+}
+
+#pageHead a {
+  display: inline-block;
+}
+
+#pageHead .headerWrapper {
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  font-size: 0;
+  z-index: 10;
+}
+
+/* サイトロゴ */
+#pageHead .headerWrapper .siteLogo {
+  float: left;
+  display: inline-block;
+  width: 58px;
+  height: 29px;
+  margin: 0;
+  padding: 15.5px 0 15.5px 55px;
+}
+
+#pageHead .headerWrapper .headerRight {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+/* 虫眼鏡、地球儀アイコン */
+#pageHead .headerWrapper .headerRight .search a {
+  padding: 17px;
+}
+
+/* ハンバーガーメニュー */
+#pageHead .headerWrapper .headerRight .headerNavi {
+  background-color: #005bac;
+  width: 60px;
+  height: 60px;
+  margin-left: 26px;
+}
+
+#pageHead .headerWrapper .headerRight .headerNavi .headerMenu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+#pageHead .headerWrapper .headerRight .headerNavi .headerMenu span {
+  display: inline-block;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid #fff;
+  margin: 0 auto;
+}
+
+#pageHead .headerWrapper .headerRight .headerNavi .headerMenu span:nth-of-type(1) {
+  top: calc(50% - 9px);
+}
+
+#pageHead .headerWrapper .headerRight .headerNavi .headerMenu span:nth-of-type(2) {
+  top: calc(50% - 1px);
+}
+
+#pageHead .headerWrapper .headerRight .headerNavi .headerMenu span:nth-of-type(3) {
+  top: calc(50% + 8px);
+}
+
+
+/* ==========メイン========== */
+#pageMain {
+  display: block;
+}
+
+/* -----メインヘッダー----- */
+/* パンくずリスト */
+#pageMain .mainHeader .pagePath {
+  width: 1000px;
+  margin: 0 auto 25px auto;
+  font-size: 0;
+}
+
+#pageMain .mainHeader .pagePath span {
+  margin: 0 0 5px 0;
+  display: inline-block;
+  margin: 0;
+}
+
+#pageMain .mainHeader .pagePath span a {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #999;
+  margin-right: 5px;
+}
+
+/* トップ */
+#pageMain .mainHeader .pageTitle {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#pageMain .mainHeader .pageTitle img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+#pageMain .mainHeader .pageTitle .pageTitleText {
+  width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+#pageMain .mainHeader .pageTitle .pageTitleText p {
+  font-size: 2.0em;
+  margin: 0 0 10px 0;
+}
+
+#pageMain .mainHeader .pageTitle .pageTitleText h1 {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}
+
+/* -----メイン----- */
+#pageMain .mainArticle {
+  width: 1000px;
+  margin: 0 auto 120px auto;
+}
+
+/* シェア */
+#pageMain .mainArticle .share {
+  width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+#pageMain .mainArticle .share .shareContainer {
+  display: inline-block;
+  width: 100%;
+}
+
+#pageMain .mainArticle .share .shareContainer ul {
+  font-size: 0;
+  display: flex;
+  float: right;
+  width: 172px;
+  height: 34px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#pageMain .mainArticle .share .shareContainer ul li:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #666;
+  cursor: default;
+}
+
+#pageMain .mainArticle .share .shareContainer ul li a {
+  display: inline-block;
+}
+
+/* NRIのデジタルビジネス戦略 */
+#pageMain .mainArticle .articleDetail {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+#pageMain .mainArticle .articleDetail .articleTitle {
+  position: relative;
+}
+
+#pageMain .mainArticle .articleDetail .articleTitle h2 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: #000;
+  margin: 0 0 30px 0;
+  padding: 0 0 0 30px;
+}
+
+#pageMain .mainArticle .articleDetail .articleTitle span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background: url("images/icon/heading.png") no-repeat;
+  background-size: contain;
+}
+
+#pageMain .mainArticle .articleDetail img {
+  display: block;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+/* ボタン */
+#pageMain .mainArticle .articleDetail .btn {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 60px 0;
+}
+
+#pageMain .mainArticle .articleDetail .btn .btnContainer {
+  display: inline-block;
+  background-color: #005bac;
+  margin: 20px 0;
+  padding: 15px 20px;
+  color: #fff;
+  line-height: 1.2;
+  position: relative;
+  transition: 0.5s;
+}
+
+#pageMain .mainArticle .articleDetail .btn .btnContainer:hover {
+  opacity: 0.7;
+}
+
+#pageMain .mainArticle .articleDetail .btn .btnContainer .chevronRight {
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  font-size: 8px;
+  position: absolute;
+  left: 8px;
+  top: 28px;
+}
+
+#pageMain .mainArticle .articleDetail .btn .btnContainer .btnText {
+  display: inline-block;
+}
+
+#pageMain .mainArticle .articleDetail .btn .btnContainer .btnText img {
+  margin: 0;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding-left: 10px;
+}
+
+/* DXの取組み事例 */
+#pageMain .mainArticle .articleDetail:nth-child(2) {
+  width: 820px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents {
+  width: 25%;
+}
+
+
+/* 画像部分 */
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent {
+  margin: 0 0 30px 0;
+  padding: 0 10px;
+  display: inline-block;
+  font-size: 0;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent a {
+  display: inline-block;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentImg {
+  position: relative;
+  width: 185px;
+  height: 185px;
+  border: solid 1px #ccc;
+  box-sizing: border-box;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentImg:hover {
+  border: solid 1px #005bac;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentImg p {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #005bac;
+  width: 100%;
+  padding: 2px 5px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentImg img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100%;
+}
+
+/* 画像の下部分 */
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentText {
+  width: 185px;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentText p {
+  margin: 10px 0 0 0;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentText p a {
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentText ul {
+  font-size: 0;
+  margin: 10px 0 5px 0;
+  width: 100%;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentText ul li {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentText ul li a {
+  font-size: 1.2rem;
+  line-height: 1.88;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentText p time {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+#pageMain .mainArticle .articleDetail .articleContainer .articleDetailContents .articleContent .contentText a:hover {
+  text-decoration: underline;
+}
+/* リンク */
+#pageMain .mainArticle .link {
+  width: 800px;
+  margin: 0 auto
+}
+
+#pageMain .mainArticle .link p {
+  margin: 60px 0;
+}
+
+#pageMain .mainArticle .link a {
+  color: #0c419a;
+  display: inline-block;
+}
+
+#pageMain .mainArticle .link a:hover {
+  text-decoration: underline;
+}
+
+#pageMain .mainArticle .link a:first-child {
+  padding-left: 10px;
+}
+
+#pageMain .mainArticle .link a:last-child {
+  padding-right: 10px;
+}
+
+#pageMain .mainArticle .link .prevLink {
+  float: left;
+}
+
+#pageMain .mainArticle .link .nextLink {
+  float: right;
+}
+
+/* NRIの強み */
+#pageMain .mainArticle .articleAside {
+  width: 800px;
+  margin: 0 auto 60px auto;
+  background-color: #deecf8;
+  padding: 20px;
+  clear: both;
+  box-sizing: border-box;
+}
+
+#pageMain .mainArticle .articleAside > p {
+  font-weight: bold;
+  margin: 0;
+}
+
+#pageMain .mainArticle .articleAside .articleAsideContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#pageMain .mainArticle .articleAside .articleAsideContainer .articleAsideContent {
+  width: 240px;
+}
+
+#pageMain .mainArticle .articleAside .articleAsideContainer .articleAsideContent p {
+  margin: 0;
+}
+
+#pageMain .mainArticle .articleAside .articleAsideContainer .articleAsideContent p a {
+  color: #0c419a;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  padding: 15px 20px;
+  border: solid 1px #ccc;
+  background-color: #fff;
+  height: 70px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  transition: 0.2s;
+}
+
+#pageMain .mainArticle .articleAside .articleAsideContainer .articleAsideContent:nth-of-type(3) p a,
+#pageMain .mainArticle .articleAside .articleAsideContainer .articleAsideContent:nth-of-type(4) p a,
+#pageMain .mainArticle .articleAside .articleAsideContainer .articleAsideContent:nth-of-type(5) p a {
+  height: 51px;
+}
+
+#pageMain .mainArticle .articleAside .articleAsideContainer .articleAsideContent p a::before {
+  content: "";
+  background: url("images/icon/chevronRight.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 4px);
+  margin: 0 auto;
+}
+
+#pageMain .mainArticle .articleAside .articleAsideContainer .articleAsideContent p a:hover {
+  background-color: #f4f4f4;
+}
+
+/* メインフッター */
+#pageMain .mainFooter {
+  width: 1000px;
+  margin: 0 auto 120px;
+  border-top: 2px solid #333;
+}
+
+#pageMain .mainFooter a:hover {
+  text-decoration: underline;
+}
+
+/* 企業情報 */
+#pageMain .mainFooter > p {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #333;
+  padding: 18px 0 30px 0;
+  margin: 0;
+  border-bottom: 1px dotted #999;
+}
+
+#pageMain .mainFooter .companyInfo {
+  font-size: 0;
+  margin-bottom: 60px;
+}
+
+#pageMain .mainFooter .companyInfo > ul > li {
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #333;
+  font-weight: bold;
+  padding: 30px 0;
+  border-bottom: 1px dotted #999;
+}
+
+#pageMain .mainFooter .companyInfo > ul > li > ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+#pageMain .mainFooter .companyInfo > ul > li > ul > li {
+  width: 25%;
+  font-weight: normal;
+  margin: 10px 0 0 0;
+}
+
+#pageMain .mainFooter .companyInfo > ul > li > ul > li a {
+  font-size: 1.4rem;
+  display: inline-block;
+  position: relative;
+  color: #0c419a;
+  padding-left: 15px;
+}
+
+#pageMain .mainFooter .companyInfo > ul > li > ul > li a::before,
+#pageFoot .asideContainer aside a::before {
+  content: "";
+  background: url("images/icon/chevronRight.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 5px);
+  margin: 0 auto;
+}
+
+/* 前のページに戻る */
+#pageMain .mainFooter .prev {
+  width: 100%;
+  text-decoration: none;
+}
+
+#pageMain .mainFooter .prev p {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#pageMain .mainFooter .prev p a {
+  display: inline-block;
+  padding-left: 15px;
+  color: #0c419a;
+}
+
+#pageMain .mainFooter .prev p a::before {
+  content: "";
+  background: url("images/icon/chevronLeft.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 10px;
+  width: 8px;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 5px);
+  margin: 0 auto;
+}
+
+
+/* -----ヘッダー----- */
+#pageFoot a {
+  text-decoration: none;
+}
+
+#pageFoot {
+  position: relative;
+}
+
+/* Follow Us */
+#pageFoot .followUs ul {
+  font-size: 0px;
+  padding: 30px 0;
+  border-top: solid 2px #999;
+  border-bottom: solid 2px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pageFoot .followUs ul li {
+  margin: 0 0 0 40px;
+}
+
+#pageFoot .followUs ul li:first-child {
+  color: #005bac;
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: "HelveticaNeue";
+}
+
+
+#pageFoot .asideContainer {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 112px;
+
+}
+
+#pageFoot .asideContainer a {
+  color: #999;
+  display: inline-block;
+  padding: 0 0 0 15px;
+}
+
+#pageFoot .asideContainer a:hover {
+  text-decoration: underline;
+}
+
+/* ナレッジインサイト */
+#pageFoot .asideContainer aside {
+  width: 100%;
+  margin: 40px auto 70px auto;
+}
+
+#pageFoot .asideContainer aside a {
+  color: #666;
+}
+
+#pageFoot .asideContainer aside .asideList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#pageFoot .asideContainer aside .asideList > li .asideListContainer > a::before {
+  top: calc(50% - 10px);
+}
+
+#pageFoot .asideContainer aside .asideList > li {
+  width: calc(25% - 15px);
+}
+
+#pageFoot .asideContainer aside .asideList > li .asideListContainer {
+  position: relative;
+}
+
+#pageFoot .asideContainer aside .asideList > li .asideListContainer > a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 15px 0 15px 15px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#pageFoot .asideContainer aside .asideList > li > ul > li {
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+#pageFoot .asideContainer aside .asideList > li > ul > li a {
+  font-size: 1.4rem;
+}
+
+/* フッターナビ */
+#pageFoot .asideContainer .footerNavi ul {
+  margin: 0 auto 15px auto;
+  font-size: 0;
+}
+
+#pageFoot .asideContainer .footerNavi ul li {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0 16px;
+  margin-bottom: 5px;
+  border-left: 1px solid #ccc;
+}
+
+#pageFoot .asideContainer .footerNavi ul li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+#pageFoot .asideContainer .footerNavi ul li a {
+  padding: 0;
+}
+
+/* コピーライト */
+#pageFoot .asideContainer p {
+  margin: 0;
+  font-size: 1.0rem;
+  font-family: "HelveticaNeue";
+}
+
+/* ページトップへ */
+#pageFoot .asideContainer .pageTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+
+#pageFoot .asideContainer .pageTop img {
+  width: 60px;
+  height: 60px;
+  vertical-align: bottom;
+}
